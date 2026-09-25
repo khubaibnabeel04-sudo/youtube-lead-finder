@@ -1,0 +1,49 @@
+# ── secrets / credentials ──────────────────────────────
+.env
+.env.*
+!.env.example
+backend/keys/
+*service-account*.json
+credentials*.json
+token*.json
+*.pem
+*.key
+
+# ── browser profiles (cookies / logged-in sessions) ────
+chrome_profile*/
+**/chrome_profile*/
+chrome_profiles/
+
+# ── real data, caches & runtime state ──────────────────
+data/
+output/
+*.xlsx
+*.csv
+backend/*_cache.json
+backend/*_status.json
+backend/auto_hop_learn.json
+backend/auto_hop_visited.json
+hop_scraper_state.json
+backend/hop_scraper_state.json
+
+# ── logs ───────────────────────────────────────────────
+*.log
+*.err
+
+# ── python ─────────────────────────────────────────────
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# ── node ───────────────────────────────────────────────
+node_modules/
+frontend/build/
+
+# ── local / editor / OS ────────────────────────────────
+-p/
+.claude/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
